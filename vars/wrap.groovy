@@ -1,6 +1,6 @@
 def call(Closure body) {
         echo "in the wrapper"
-        printf(body)
+        println(body.println())
         //println(body.getProperty('imageName'))
         //body()
 }
