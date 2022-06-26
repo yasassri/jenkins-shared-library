@@ -1,4 +1,4 @@
-def call(Closure body, def imageName) {
+def call(def imageName) {
         echo "in the wrapper"
         println(body.getMaximumNumberOfParameters())
         //println(body.getProperty('imageName'))
