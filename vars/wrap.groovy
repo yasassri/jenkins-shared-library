@@ -1,7 +1,8 @@
-@NonCPS
-def call(def body) {
-        echo "in the wrapper"
-        println(imageName)
-        println(body.getProperty('imageName'))
-        //body()
+// vars/buildPlugin.groovy
+def call(body) {
+    // evaluate the body block, and collect configuration into the object
+    def config = [:]
+    body.resolveStrategy = Closure.DELEGATE_FIRST
+    body.delegate = config
+    println(${config.name})
 }
