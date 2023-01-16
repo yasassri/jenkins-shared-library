@@ -1,3 +1,7 @@
 def call(String name = 'human') {
-  echo "Hello, ${name}."
+  pipeline {
+       stages {
+           echo "Hello, ${name}."
+       }
+   } 
 }
