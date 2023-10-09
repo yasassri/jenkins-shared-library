@@ -1,3 +1,3 @@
-def call() {
+def loadMachineList() {
   return ['abc', 'cde', 'efg']
 }
