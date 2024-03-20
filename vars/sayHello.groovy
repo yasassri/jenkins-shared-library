@@ -16,6 +16,8 @@ def call() {
   myFunc()
 }
 
+return this
+
 // def call_my_pipeline() {
 //   pipeline {
 //     agent any
