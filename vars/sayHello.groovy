@@ -25,8 +25,6 @@ def call(body) {
     myPipelineMethod()
 }
 
-return this
-
 // def call_my_pipeline() {
 //   pipeline {
 //     agent any
