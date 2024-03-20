@@ -1,4 +1,4 @@
-def call(String name = 'human') {
+def call_my_pipeline() {
   pipeline {
     agent any
     stages {
@@ -8,5 +8,9 @@ def call(String name = 'human') {
             }
         }
     }
+  }
 }
+
+def call() {
+  call_my_pipeline()
 }
