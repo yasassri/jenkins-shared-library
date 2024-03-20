@@ -1,5 +1,5 @@
-def call() {
-  pipeline {
+def myFunc(){
+    pipeline {
     agent any
     stages {
         stage('Hello') {
@@ -9,6 +9,11 @@ def call() {
         }
     }
 }
+  
+}
+
+def call() {
+  myFunc()
 }
 
 // def call_my_pipeline() {
